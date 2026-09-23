@@ -1,0 +1,42 @@
+0 verbose cli /usr/local/bin/node /usr/local/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.16.0
+2 info using node@v24.15.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/adityananda/MyWorkspace/AeroSplat-3D/.npmrc
+5 silly config load:file:/Users/adityananda/MyWorkspace/AeroSplat-3D/.config/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm exec create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias @/* --use-npm --yes
+8 verbose argv "exec" "--" "create-next-app@latest" "." "--typescript" "--tailwind" "--eslint" "--app" "--src-dir=false" "--import-alias" "@/*" "--use-npm" "--yes"
+9 verbose logfile logs-max:10 dir:/Users/adityananda/MyWorkspace/AeroSplat-3D/.config/.npm/_logs/2026-09-23T08_55_09_551Z-
+10 verbose logfile /Users/adityananda/MyWorkspace/AeroSplat-3D/.config/.npm/_logs/2026-09-23T08_55_09_551Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET https://registry.npmjs.org/npm attempt 1 failed with ENOTFOUND
+13 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+14 http fetch GET https://registry.npmjs.org/create-next-app attempt 1 failed with ENOTFOUND
+15 http fetch GET https://registry.npmjs.org/npm attempt 2 failed with ENOTFOUND
+16 http fetch GET https://registry.npmjs.org/create-next-app attempt 2 failed with ENOTFOUND
+17 http fetch GET https://registry.npmjs.org/npm attempt 3 failed with ENOTFOUND
+18 http fetch GET https://registry.npmjs.org/create-next-app attempt 3 failed with ENOTFOUND
+19 verbose type system
+20 verbose stack FetchError: request to https://registry.npmjs.org/create-next-app failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+20 verbose stack     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/index.js:130:14)
+20 verbose stack     at ClientRequest.emit (node:events:509:28)
+20 verbose stack     at emitErrorEvent (node:_http_client:109:11)
+20 verbose stack     at _destroy (node:_http_client:993:9)
+20 verbose stack     at onSocketNT (node:_http_client:1013:5)
+20 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+21 error code ENOTFOUND
+22 error syscall getaddrinfo
+23 error errno ENOTFOUND
+24 error network request to https://registry.npmjs.org/create-next-app failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+25 error network This is a problem related to network connectivity.
+25 error network In most cases you are behind a proxy or have bad network settings.
+25 error network
+25 error network If you are behind a proxy, please make sure that the 'proxy' config is set properly.  See: 'npm help config'
+26 verbose cwd /Users/adityananda/MyWorkspace/AeroSplat-3D
+27 verbose os Darwin 25.6.0
+28 verbose node v24.15.0
+29 verbose npm  v11.16.0
+30 verbose exit 1
+31 verbose code 1
+32 error A complete log of this run can be found in: /Users/adityananda/MyWorkspace/AeroSplat-3D/.config/.npm/_logs/2026-09-23T08_55_09_551Z-debug-0.log

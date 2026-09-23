@@ -1,26 +1,105 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-canvas: #090909;
+  --color-surface-1: #141414;
+  --color-surface-2: #1c1c1c;
+  --color-hairline: #262626;
+  --color-hairline-soft: #1a1a1a;
+  --color-brand-primary: #ffffff;
+  --color-brand-on-primary: #000000;
+  --color-accent-blue: #0099ff;
+  --color-ink: #ffffff;
+  --color-ink-muted: #999999;
+  --color-gradient-magenta: #d44df0;
+  --color-gradient-violet: #6a4cf5;
+  --color-gradient-orange: #ff7a3d;
+  --color-gradient-coral: #ff5577;
+  --color-semantic-success: #22c55e;
+  
+  --font-display: "Geist", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "Geist Mono", monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .text-display-xxl {
+    font-size: 110px;
+    font-weight: 500;
+    line-height: 0.85;
+    letter-spacing: -5.5px;
+  }
+  .text-display-xl {
+    font-size: 85px;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -4.25px;
+  }
+  .text-display-lg {
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 1.00;
+    letter-spacing: -3.1px;
+  }
+  .text-display-md {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.13;
+    letter-spacing: -1.0px;
+  }
+  .text-subhead {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.30;
+    letter-spacing: -0.01px;
+  }
+  .text-body-lg {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.30;
+    letter-spacing: -0.18px;
+  }
+  .text-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.30;
+    letter-spacing: -0.15px;
+  }
+  .text-body-sm {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.40;
+    letter-spacing: -0.14px;
+  }
+  .text-caption {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.20;
+    letter-spacing: -0.13px;
+  }
+  .text-micro {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.20;
+    letter-spacing: -0.12px;
+  }
+  .text-button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.0;
+    letter-spacing: -0.14px;
+  }
 }
